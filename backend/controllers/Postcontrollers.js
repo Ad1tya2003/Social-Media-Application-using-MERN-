@@ -2,7 +2,7 @@ const Post = require("../models/Post");
 const User = require("../models/User");
 const cloudinary = require("cloudinary");
 
-exports.createPost = async (req, res) => {
+exports.createPost = async (req,res) => {
   try {
     const myCloud = await cloudinary.v2.uploader.upload(req.body.Postimages, {
       folder: "Post",
