@@ -13,7 +13,7 @@ app.use(express.json({ limit: "50mb" }));
 app.use(cookieParser());
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 
-// import routes
+// import routes.
 
 const post = require("./routes/Postroute");
 const user = require("./routes/Userroute");
