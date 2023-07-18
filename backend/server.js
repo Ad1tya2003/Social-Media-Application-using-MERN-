@@ -3,7 +3,7 @@ const { connectDatabase } = require("./config/database");
 const cloudinary = require("cloudinary");
 
 connectDatabase();
-
+//server
 cloudinary.config({
   cloud_name: process.env.CLOUDNARY_NAME,
   api_key: process.env.CLOUDNARY_KEY,
