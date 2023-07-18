@@ -1,0 +1,203 @@
+.account {
+  .account-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #b5c2d4;
+    padding-bottom: 2rem;
+
+    div {
+      .avatar {
+        width: 12vmax;
+        height: 12vmax;
+      }
+    }
+    .account-details {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      width: 50%;
+
+      .div-1 {
+        display: flex;
+        justify-content: space-around;
+        font-weight: bold;
+
+        .div-11 {
+          display: flex;
+          flex-direction: column;
+
+          div {
+            p:nth-child(2) {
+              color: #708090;
+            }
+            display: flex;
+            flex-direction: row;
+            margin-top: 0.7rem;
+          }
+        }
+        .div-12 {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin-top: 0.7rem;
+
+          div {
+            p:nth-child(2) {
+              color: #708090;
+            }
+            display: flex;
+            flex-direction: row;
+          }
+        }
+      }
+
+      .div-2 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0.7rem;
+        align-items: end;
+
+        div {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          font-weight: bold;
+          cursor: pointer;
+
+          button {
+            font-weight: bold;
+            outline: none;
+            padding: 0.1rem 0.5rem;
+            border: 1px solid #b5c2d4;
+            background: white;
+            border-radius: 13px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .div-3 {
+        display: flex;
+        margin-top: 0.7rem;
+        justify-content: space-around;
+        margin-top: 1rem;
+
+        button {
+          padding: 0.5rem 1rem;
+          outline: none;
+          border: none;
+          border-radius: 7px;
+          background-color: rgb(239, 68, 68);
+          border: 1px solid rgb(239, 68, 68);
+          color: white;
+          font-weight: bold;
+          margin-left: -4rem;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+          margin: 1rem 0;
+          &:active {
+            transform: scale(0.6);
+          }
+          &:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(239, 68, 68);
+            border: 1px solid rgb(239, 68, 68);
+          }
+        }
+
+        a {
+          padding: 0.5rem 1rem;
+          outline: none;
+          border: none;
+          border-radius: 7px;
+          background-color: rgb(74, 222, 128);
+          border: 1px solid rgb(74, 222, 128);
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+          margin: 1rem 0;
+          &:active {
+            transform: scale(0.6);
+          }
+          &:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(74, 222, 128);
+            border: 1px solid rgb(74, 222, 128);
+          }
+        }
+      }
+    }
+  }
+}
+
+.post-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin: 0.5rem 1rem;
+    font-size: 1.2rem;
+
+    svg {
+      &:focus,
+      &:active {
+        background-color: aliceblue;
+        color: orange;
+      }
+    }
+
+    &:hover {
+      background-color: aliceblue;
+      color: orange;
+      cursor: pointer;
+    }
+  }
+}
+
+.allpost-container {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.allpost {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  align-items: center;
+  margin: auto;
+  // padding: 2vmax;
+  transition: 0.5s all;
+}
+.savedPost {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  transition: 0.5s all;
+  transform: translateY(-100%) translateX(-100vmax);
+}
+.post {
+  width: 13rem;
+  margin: 1.5rem;
+}
+.postimg {
+  img {
+    height: 20rem;
+  }
+}
+.shiftToLeft {
+  transform: translateX(-100%);
+}
+.shiftToNeutral {
+  transform: translateX(0%);
+}
+.shiftToNeutralForm {
+  transform: translateX(0%) translateY(-100%);
+}
+.shiftToRight {
+  transform: translateX(100%);
+}

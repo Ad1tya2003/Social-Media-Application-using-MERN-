@@ -1,0 +1,34 @@
+.commentcard {
+  margin-top: 1rem;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      display: flex;
+      align-items: center;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      h4 {
+        margin-left: 10px;
+        color: black;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    button {
+      background: white;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    margin-left: 3rem;
+  }
+}

@@ -1,0 +1,124 @@
+.newPost {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+
+  .newPost-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    .newPost-text {
+      p:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      p:nth-child(2) {
+        color: rgb(100, 116, 139);
+        font-size: 1.2rem;
+      }
+    }
+    .newPost-container {
+      img {
+        width: 235px;
+        height: 365px;
+        border-radius: 15px;
+      }
+
+      border: 6px solid rgb(226, 232, 240);
+      border-style: dashed;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      width: 250px;
+      height: 380px;
+      border-radius: 15px;
+      &:hover {
+        border-color: rgb(134, 239, 172);
+        background: rgb(241, 245, 249);
+      }
+
+      .newPostlabel {
+        cursor: pointer;
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+
+          .newPost-svg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+              font-size: 6rem;
+              color: rgb(203, 213, 225);
+            }
+            p {
+              color: rgb(239, 68, 68);
+              font-weight: bold;
+              margin-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.newPost-form {
+  display: flex;
+  .newPostform {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      color: #5d6878;
+    }
+
+    input {
+      outline: none;
+      border: 1px solid #b5c2d4;
+      padding: 0.7rem;
+      border-radius: 7px;
+    }
+    .file {
+      outline: none;
+      border: 1px solid #b5c2d4;
+      padding: 0.7rem;
+      border-radius: 7px;
+      margin-top: 1rem;
+    }
+    button {
+      margin-top: 1rem;
+      outline: none;
+      cursor: pointer;
+      border: 1px solid;
+      padding: 0.7rem;
+      border-radius: 7px;
+      font-weight: bold;
+      background: #1216c8;
+      color: white;
+      &:hover {
+        background: #171a93;
+      }
+
+      p{
+        color: white;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

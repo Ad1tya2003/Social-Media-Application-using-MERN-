@@ -1,0 +1,45 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    border: none;
+  }
+  form {
+    width: 55%;
+    input {
+      outline: none;
+      border: 1px solid #b5c2d4;
+      padding: 0.7rem;
+      border-radius: 7px;
+
+      width: 70%;
+
+      &:focus {
+        outline: none !important;
+        border-color: #85b8ed;
+        box-shadow: 0 0 10px #85b8ed;
+      }
+    }
+    button {
+      outline: none;
+      border: 1px solid #1216c8;
+      padding: 0.7rem;
+      border-radius: 7px;
+      font-weight: bold;
+      background: #1216c8;
+      transition: all 0.35s ease-in-out;
+      color: white;
+      margin-left: 2rem;
+      cursor: pointer;
+
+      &:hover {
+        background: white;
+        color: #1216c8;
+      }
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

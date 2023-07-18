@@ -1,0 +1,35 @@
+.user {
+  text-decoration: none;
+  display: flex;
+  margin-top: 1.5rem;
+
+  img {
+    width: 60px;
+    border-radius: 50%;
+    height: 60px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      margin: 0;
+      margin-left: 10px;
+      color: black;
+      &:hover {
+        color: #3d454f;
+        text-decoration: underline;
+      }
+    }
+    h4 {
+      font-weight: 100;
+      margin: 0;
+      margin-left: 10px;
+      color: #94a3b894;
+    }
+  }
+  svg {
+    color: rgb(96, 165, 250);
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+}

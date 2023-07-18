@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap");
+.home{
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+.home-right{
+    display: grid;
+    grid-template-columns: 3fr 1.25fr;
+    height: 92vh;
+}
+.userpost{
+    overflow: auto;
+}
