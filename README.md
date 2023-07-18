@@ -1,3 +1,4 @@
+Demo website : socialmedia-gxmj.onrender.com/
 # Social Media Application
 # Using MERN Stack
 # CipherSchools.com MERN Project
@@ -44,7 +45,7 @@ A MERN stack based project on social media application. It is completely working
 
 
 **Don't Forget to Star the Repository**
-Demo website : socialmedia-gxmj.onrender.com/
+
 
 **It is not mobile responsive yet**
 
